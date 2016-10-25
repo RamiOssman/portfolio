@@ -1,0 +1,154 @@
+
+
+@media screen and (max-width: 1000px)
+    {
+.imglogo
+        {
+        
+          margin-left:45.5%  ;
+            
+        }
+        
+    
+
+.HLTCL
+{
+ width: 90% ;    
+}
+.HL1CL > div > p , .HL2CL > div > p 
+{
+     width: 119px ; 
+ font-size: 14px ;    
+}
+        .HL1CL > div > h2 
+        {
+            margin-left: .5% ; 
+            
+            
+        }
+         .HL2CL > div > h2
+        {
+             margin-left: 24% ; 
+        }
+.HL2CL > div > p
+{
+  font-weight: bold ; 
+   margin-left: 24% ; 
+}
+        .HL1CL > div > p
+{
+  font-weight: bold ; 
+   margin-left: .5% ; 
+}
+        #HLPC
+        {
+        width: 250px ;
+            
+        }
+        .HL1CL > #HLPC
+        {
+           margin-left: 80px ;  
+        }
+   
+        
+        }
+
+
+@media screen and (max-width: 800px)
+{
+.imglogo
+        {
+        
+          margin-left:44.5%  ;
+            
+        }
+        
+.HL2CL > div > p , .HL2CL > div > h2
+{
+   margin-left: 29% ; 
+}
+
+
+}
+
+@media screen and (max-width: 710px)
+    {
+        .HLTCL
+{
+ width: 100% ;    
+}
+        .HLTCL
+        {
+            
+         display:block ;   
+            height: 510px ;
+            
+            
+        }
+                #HLPC
+        {
+           
+        width: 250px ;
+            
+        }   
+          .HL1CL > #HLPC
+        {
+            
+   margin-left: auto ; 
+        }
+               .HL2CL > #HLPC
+        {
+            
+ margin-left: auto ; 
+        }
+        .icons8-Circled-Down
+        {
+         margin-top: 500px ; 
+        }
+           .icons8-Circled-Down:hover
+        {
+         margin-top: 505px ; 
+        }
+          .HL1CL > div > h2 ,   .HL2CL > div > h2 ,.HL1CL > div > p , .HL2CL > div > p 
+        {
+            margin-left: 50% ; 
+        }
+      
+            
+    }
+@media screen and (max-width: 550px)
+    {
+        .imglogo
+        {
+        
+          margin-left:43%  ;
+            
+        }
+        
+              .HLTCL
+        {
+            
+         
+            height: 410px ;
+        }
+            
+         #HLPC
+        {
+           
+        width: 200px ;
+            height: 400px ; 
+            
+        }
+                  .HL1CL > div > h2 ,   .HL2CL > div > h2 ,.HL1CL > div > p , .HL2CL > div > p 
+        {
+            margin-left: 55% ; 
+        }
+        .HL1CL > div > h2 ,   .HL2CL > div > h2{
+        
+        font-size: 30px ; 
+        
+        }
+    }
+
+
+

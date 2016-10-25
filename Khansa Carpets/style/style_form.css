@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
+body , html
+{
+    margin: 0px ; 
+    
+ background-color: #f9f9f9 ;    
+}
+#start_form
+{
+
+      padding-top: 130px ; 
+}
+.startingPositionLogoImage
+{
+width : 130px ;    
+
+    
+}
+
+.h2KC
+{
+    font-size : 40px ; 
+font-family: 'Poiret One', cursive;
+    letter-spacing: 10px ;     
+}
+.ul1 > li
+{
+    
+  display:block ;   
+}
+
+.m019
+{
+    
+ width: 100% ; 
+    height: 100px ; 
+background-color: #e9e9e9 ; 
+    display: none;  
+    
+}
+.shape1 
+{
+ width: 50px ;   
+    height: 3px ;
+    position:absolute;  
+    
+    
+}
+#menu_button
+{
+width: 100px ;  
+    height: 100px ;
+    margin-left: 20px ; 
+    position: absolute ; 
+}
+
+#menu_button > .sp1 , #menu_button > .sp2 , #menu_button > .sp3
+{
+    
+    
+}
+#logoPlus
+{
+
+    width:100%;
+    
+    
+}
+.imglogo
+{   
+   
+    height: 85px ; 
+    margin-left: 47%  ;  
+    margin-top: 3px ; 
+    opacity: 0.0 ; 
+}
+
+.menu
+{
+    background-color:black; 
+    
+    opacity: 0.6 ; 
+width: 100% ; 
+    
+height: 440px ;
+    
+    display: none ; 
+}
+.menutitle
+{
+    margin-top: 0px ; 
+        color: #CDC8B1;  
+font-family: 'Playfair Display SC', serif;
+
+    width: 120px ; 
+    font-size: 40px;
+    padding-top: 10px;
+    letter-spacing: 7px;  
+}
+nav , li
+{
+margin-left: 7px ; 
+ display: block ;    
+}
+nav
+{ 
+    
+
+    
+}
+nav li
+{
+font-family: 'Muli', sans-serif;
+    color: white ; 
+    font-size: 20px ; 
+    height: 50px ; 
+    width: 160px ; 
+
+    cursor: pointer ; 
+    margin-bottom: 40px;  
+    
+}
+ 
+nav li:hover
+{
+   border-bottom: 2px solid white;
+    
+    
+}
+.HLTCL
+{
+        display: flex;
+    width:  40% ; 
+    height: 500px ; 
+    margin-left: auto ;
+    margin-right: auto ; 
+    margin-top: 100px ; 
+    
+    
+    
+    
+}
+.HL1CL
+{
+
+    height: 100% ; 
+    width: 50% ; 
+  
+}
+.HL2CL
+{
+
+    height: 100% ; 
+    width: 50% ; 
+    
+    
+}
+#HLPC
+{
+
+      display: inline ; 
+    cursor: pointer ; 
+    width:  100% ;   ; 
+ 
+       height: 460px ;
+    
+    
+}
+.HL2CL > #HLPC
+{
+       height: 480px ;
+         margin-left: 0px; 
+    margin-top: -10px ;
+    z-index: 5; 
+}
+.HL1CL > #HLPC
+{ 
+    z-index: 9 ; 
+    margin-left: 0px ; 
+}
+.HL1CL > div > h2 , .HL2CL > div > h2
+{   
+    cursor: pointer ; 
+    position: absolute ; 
+   width: 180px ;   
+    font-size:40px ; 
+    color: #CDC8B1;  
+    margin-left: -9.8% ;
+  font-style: italic ; 
+font-family: 'Playfair Display SC', serif;
+    z-index: 10 ; 
+
+}
+.viewG
+{
+   cursor: pointer ; 
+    position: absolute ; 
+   width: 140px ;   
+    font-size:20px ; 
+    color: #CDC8B1;  
+    margin-left: -100px  ;
+  font-style: italic ; 
+font-family: 'Playfair Display SC', serif;
+    margin-top: 8px ; 
+    z-index: 10 ;    
+}
+.viewG:hover
+{
+    margin-left: -95px ;
+}
+
+.icons8-Circled-Down , .icons8-Circled-Up 
+{
+ display: none ; 
+cursor: pointer ; 
+
+}
+
+.icons8-Circled-Up 
+{
+   
+    transform: rotate(180deg) ; 
+    -moz-transform: rotate(180deg) ; 
+    padding-bottom: 100px
+    
+}
+#ULUL
+{
+  margin-left: -37px ;   
+    
+    
+}
+.icons8-Circled-Down:hover
+{
+   margin-top: 5px ;
+}
+
+.HL1CL > div > h2:hover, .HL2CL > div > h2:hover 
+{
+ text-decoration: underline ;    
+}
+
+.HL2CL > div > h2
+{
+    
+    margin-left: 17% ;
+}
+
+.HL1CL > div > h2
+{
+    
+
+}
+
+
+
+.HL1CL > div > p , .HL2CL > div > p 
+{
+    color: #CDC8B1;
+    position: absolute ; 
+ 
+font-family: 'Playfair Display SC', serif;
+    font-size: 20px ; 
+   z-index: 10 ; 
+
+}
+.HL1CL > div > p 
+{
+   margin-left: -9.8% ;
+    
+}
+.HL2CL > div > p
+{
+    
+   margin-left: 17% ; 
+}
+.HL1CL > div > p.first , .HL2CL > div > p.first
+{
+    margin-top: 160px ; 
+
+}
+.HL1CL > div > p.second , .HL2CL > div > p.second
+{
+    margin-top: 200px ; 
+
+}
+.HL1CL > div > p.last  ,.HL2CL > div > p.last
+{
+    margin-top: 240px ; 
+
+}

@@ -46,36 +46,153 @@
 			<script>
 				var circleCilectedNow = 0 ; 
 				var scrollTo = new Array("partA" , "part0" , "partB" , "partC" , "partD") ; 
+                
+                document.getScroll= function(){
+ if(window.pageYOffset!= undefined){
+  return [pageXOffset, pageYOffset];
+ }
+ else{
+  var sx, sy, d= document, r= d.documentElement, b= d.body;
+  sx= r.scrollLeft || b.scrollLeft || 0;
+  sy= r.scrollTop || b.scrollTop || 0;
+  return [sx, sy];
+ }
+}
+                
+                 function bricoladeValue(x)
+                {
+                    if(x <= 2)
+                        return x;
+                    else
+                        return x+1 ; 
+                    
+                    
+                }
 				
 				function circleClick(ElementM , id )
 				{
 					
 					if(circleCilectedNow == id)
-						return ; 
-					
-					$(ElementM).css({r: "63.5", transition: "0.4s"});
-					
-					$($("svg")[0].children[circleCilectedNow]).css({r: "33.5", transition: "0.4s"});
+                        {
+                            if(id == 2)
+                                {
+                                    if($("svg")[0].children[2] == ElementM)
+                                        {
+                                            $($("svg")[0].children[3]).css({r: "33.5", transition: "0.4s"});
+                                      $(ElementM).css({r: "63.5", transition: "0.4s"});	
+                                        
+ 
+                                        // user is on 2[1] and click 2[0] 
+                                        }
+                                    else{
+                                        $($("svg")[0].children[2]).css({r: "33.5", transition: "0.4s"});
+                                      $(ElementM).css({r: "63.5", transition: "0.4s"});	
+                                   
+                                        
+                                        // user is on 2[0] and click 2[1]
+                                        
+                                    }
+                                    
+                            
+                                      circleCilectedNow = id ; 
+                                    
+                                }
+                            
+                            
+                             return ; 
+                        }
+                    if(id == 2)
+                        {
+                             if($("svg")[0].children[2] == ElementM)
+                                        {
+           
+                                        }
+                                    else{
+          
+                                        
+                                    } 
+                            
+                            
+                            
+                        }
+						
+                    $($("svg")[0].children[3]).css({r: "33.5", transition: "0.4s"});
+                    $($("svg")[0].children[bricoladeValue(circleCilectedNow)]).css({r: "33.5", transition: "0.4s"});
+                        
+                        
 					    $('html, body').animate({
             scrollTop: $($("."+scrollTo[id])[0]).offset().top
         }, 500);
-					if(id == 2 || id == 4)
+                    
+                    
+                    
+                    
+					if(id == 2 || id == 4 )
 					{
 $(".cls-1").css({fill: "#000", transition: "0.4s"});
 $(".contact_in_header").css({color: "#000", transition: "0.4s"});					
-						
+$(".chat_available").css({color: "#000", transition: "0.4s"});							
 					}
-					else if(circleCilectedNow == 2)
+					else
 					{
 						$(".cls-1").css({fill: "#fff", transition: "0.4s"});
 						$(".contact_in_header")	.css({color: "#fff", transition: "0.4s"});
+                        $(".chat_available").css({color: "#fff", transition: "0.4s"});	
 						
 					}
 					
+                    
 				circleCilectedNow = id ; 
-					
+                
+                    $(ElementM).css({r: "63.5", transition: "0.4s"});	
+			
 					
 				}
+                
+                
+                function updateScroll()
+                {
+                    
+                    var scroll_Value = document.getScroll()[1] ; 
+                    
+                    if(scroll_Value < 400)
+                        {
+                        circleClick(document.getElementsByClassName("cls-1")[0] , 0)     ; 
+                        return 0;    
+                        }
+                    if(scroll_Value < 1300)
+                        {
+                        partAT = 1 ;
+                        circleClick(document.getElementsByClassName("cls-1")[1] , 1)     ; 
+                        return 1;    
+                        }
+                    if(scroll_Value < 2100)
+                        {
+                        circleClick(document.getElementsByClassName("cls-1")[2] , 2)     ; 
+                        return 2;    
+                        }
+                    if(scroll_Value < 3000)
+                        {
+                        circleClick(document.getElementsByClassName("cls-1")[4] , 3)     ; 
+                        return 3;    
+                        }
+                    if(scroll_Value < 5000)
+                        {
+                        circleClick(document.getElementsByClassName("cls-1")[5] , 4)     ; 
+                        return 4;   
+                        }
+                    
+                        circleClick(document.getElementsByClassName("cls-1")[0] , 0)     ; 
+                        return 0;  
+                
+                
+                
+                }
+                
+                
+               
+                
+                
 				
 				
 				</script>	
@@ -104,11 +221,27 @@ $(".contact_in_header").css({color: "#000", transition: "0.4s"});
 			Works <span class="Is">I</span> Have Done
 			</h2>
 		<div class="ensb">
-			<div data-wow-delay=".25s" class="next wow fadeInLeftBig" >
-				<p class="sfmt">Scroll down for more</p>
-
-		</div>	
+			
 		<div class="wlist">
+		<div class="wow fadeInLeftBig wl">
+<p>Real-time bidding platform</p>	
+			</div>
+					<div data-wow-delay=".25s" class="wow fadeInLeftBig wl">
+<p>market research about Internet Hot Spots</p>	
+			</div>
+					<div data-wow-delay=".5s" class="wow fadeInLeftBig wl">
+<p>Design a PSD and then build it into HTML5</p>	
+			</div>
+					<div  data-wow-delay=".75s" class="wow fadeInLeftBig wl">
+<p>UI Design for a mobile website.</p>	
+			</div>
+					<div  data-wow-delay="1s" class="wow fadeInLeftBig wl">
+<p>WordPress Website</p>	
+			</div>
+	
+			
+		</div>
+            		<div class="wlistTwo">
 		<div class="wow fadeInLeftBig wl">
 <p>Real-time bidding platform</p>	
 			</div>
@@ -294,8 +427,9 @@ $(".contact_in_header").css({color: "#000", transition: "0.4s"});
   <circle onmouseover="circleClick(this , 0)" cx="63.5" cy="-700" r="63.5" class="cls-1 selected"/>
 	<circle onmouseover="circleClick(this , 1)"  cx="63.5" cy="-400" r="33.5" class="cls-1 unselected"/>
 					<circle  onmouseover="circleClick(this , 2)" cx="63.5" cy="-100" r="33.5" class="cls-1 unselected"/>
-					<circle onmouseover="circleClick(this , 3)"  cx="63.5" cy="200" r="33.5" class="cls-1 unselected"/>
-					<circle onmouseover="circleClick(this , 4)" id='circleLast'  cx="63.5" cy="500" r="33.5" class="cls-1 unselected"/>
+                    <circle  onmouseover="circleClick(this , 2)" cx="63.5" cy="200" r="33.5" class="cls-1 unselected"/>
+					<circle onmouseover="circleClick(this , 3)"  cx="63.5" cy="500" r="33.5" class="cls-1 unselected"/>
+					<circle onmouseover="circleClick(this , 4)" id='circleLast'  cx="63.5" cy="800" r="33.5" class="cls-1 unselected"/>
 					  <defs>
     <style>
       .cls-1 {
@@ -309,6 +443,23 @@ $(".contact_in_header").css({color: "#000", transition: "0.4s"});
 				</section>
 	<div class="header">
 	  <h3 class="contact_in_header" style="cursor:pointer" onclick="circleClick(document.getElementById('circleLast') , 4)">Contact</h3>
+        <div class="live_chat">
+            <div  class="profile_online">
+                 <p class="chat_available">Available for chat</p>
+                    <img class="image_chat" src="Images/chat.png"/>
+                </div>
+        <div>start Chat</div>
+        
+        </div>
 			</div>
+<script
+        >
+    $(".profile_online").fadeIn(1000) ; 
+    $(".contact_in_header").fadeIn(1000) ; 
+    $(".p1s3").fadeIn(1000) ; 
+    circleCilectedNow = updateScroll() ; 
+
+
+</script>
 	</body>
 </html>

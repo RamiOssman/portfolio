@@ -2,9 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 @import url(https://fonts.googleapis.com/css?family=Dosis:500);
 @import url(https://fonts.googleapis.com/css?family=Raleway:200);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Chettan';
 @import 'https://fonts.googleapis.com/css?family=Raleway' ; 
+
 
 html,body
 {
@@ -49,8 +51,7 @@ background-color: chocolate ;
 	color:white; 
 	cursor: pointer ; 
 	position: fixed ; 
-	
-	
+    display: none ; 
 }
 .content1
 {
@@ -186,7 +187,8 @@ color:black;
 {
 	  width: 17px ;	
     right: 10 ; 
-	top:38% ; 
+	top:38% ;
+    display: none ; 
 
 	
 }
@@ -361,10 +363,33 @@ table.contact
     
     
 }
+.chat_available
+{
+    color:white ;  
+    display: inline;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+.image_chat
+{
+    
+    margin-bottom: -15px;
+    
+}
 tr > th
 {
     width: 33% ; 
     font-family: 'Raleway', sans-serif;
+    
+}
+.profile_online
+{
+    top:90%;
+    right: 2% ; 
+    position: fixed ; 
+    display: none ; 
+   
+    
     
 }
 @media all and (max-width: 1000px)

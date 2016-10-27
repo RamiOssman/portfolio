@@ -70,7 +70,19 @@
                     
                     
                 }
+                var TextsA = Array("Find The Answer Mobile Game" , "Design a PSD and then build it into HTML5" , "Mise en place d'un QUIZZ de 4 questions sur Wordpress" , "Mug designer" , "Landing Page responsive css coding") ; 
+                var TextsB = Array("Real-time bidding platform" , "Market research about Internet Hot Spots" , "Where Is My Car Mobile Application " , "UI Design for a mobile website." , "WordPress Website") ; 
 				
+                function setStyle(x)
+                {
+                    
+                     document.getElementsByClassName("OPTAA")[x].innerHTML = TextsB[x] ; 
+                }
+                     function setStyleA(x)
+                {
+                    
+                     document.getElementsByClassName("OPTAA")[x].innerHTML = TextsA[x] ; 
+                }
 				function circleClick(ElementM , id )
 				{
 					
@@ -81,13 +93,42 @@
                                     if($("svg")[0].children[2] == ElementM)
                                         {
                                             $($("svg")[0].children[3]).css({r: "33.5", transition: "0.4s"});
-                                      $(ElementM).css({r: "63.5", transition: "0.4s"});	
+                      
+                                         
+                                           
+                                            
+                                         for(x = 0 ; x < 5 ; x++)
+                                             {
+
+                                                 
+                                                $($(".OPTAA")[x]).fadeOut(500 ) ; 
+                                                 setTimeout(500, setStyle(x)) ; 
+                                                 
+                                                   $($(".OPTAA")[x]).fadeIn(500 ) ;  
+                                                
+                                             }
+                                             
+                                           
+                                            
+                                            
+                                                     $(ElementM).css({r: "63.5", transition: "0.4s"});	
                                         
  
                                         // user is on 2[1] and click 2[0] 
                                         }
                                     else{
                                         $($("svg")[0].children[2]).css({r: "33.5", transition: "0.4s"});
+                                        
+                                                       for(x = 0 ; x < 5 ; x++)
+                                             {
+                                                 
+                                                $($(".OPTAA")[x]).fadeOut(500) ; 
+                                                     setTimeout(500, setStyleA(x)) ; 
+                                                   $($(".OPTAA")[x]).fadeIn(500  ) ;  
+                                                
+                                             }
+                                             
+                                     
                                       $(ElementM).css({r: "63.5", transition: "0.4s"});	
                                    
                                         
@@ -108,9 +149,15 @@
                              if($("svg")[0].children[2] == ElementM)
                                         {
            
+                        
+                             
+                                            
                                         }
                                     else{
-          
+                             
+                                        
+                                     
+                                
                                         
                                     } 
                             
@@ -226,38 +273,19 @@ $(".chat_available").css({color: "#000", transition: "0.4s"});
 			
 		<div class="wlist">
 		<div class="wow fadeInLeftBig wl">
-<p>Real-time bidding platform</p>	
+<p class="OPTAA" >Real-time bidding platform</p>	
 			</div>
 					<div data-wow-delay=".25s" class="wow fadeInLeftBig wl">
-<p>market research about Internet Hot Spots</p>	
+<p  class="OPTAA" >market research about Internet Hot Spots</p>	
 			</div>
 					<div data-wow-delay=".5s" class="wow fadeInLeftBig wl">
-<p>Design a PSD and then build it into HTML5</p>	
+<p  class="OPTAA" >Design a PSD and then build it into HTML5</p>	
 			</div>
 					<div  data-wow-delay=".75s" class="wow fadeInLeftBig wl">
-<p>UI Design for a mobile website.</p>	
+<p  class="OPTAA" >UI Design for a mobile website.</p>	
 			</div>
 					<div  data-wow-delay="1s" class="wow fadeInLeftBig wl">
-<p>WordPress Website</p>	
-			</div>
-	
-			
-		</div>
-            		<div class="wlistTwo">
-		<div class="wow fadeInLeftBig wl">
-<p>Real-time bidding platform</p>	
-			</div>
-					<div data-wow-delay=".25s" class="wow fadeInLeftBig wl">
-<p>market research about Internet Hot Spots</p>	
-			</div>
-					<div data-wow-delay=".5s" class="wow fadeInLeftBig wl">
-<p>Design a PSD and then build it into HTML5</p>	
-			</div>
-					<div  data-wow-delay=".75s" class="wow fadeInLeftBig wl">
-<p>UI Design for a mobile website.</p>	
-			</div>
-					<div  data-wow-delay="1s" class="wow fadeInLeftBig wl">
-<p>WordPress Website</p>	
+<p  class="OPTAA" >WordPress Website</p>	
 			</div>
 	
 			

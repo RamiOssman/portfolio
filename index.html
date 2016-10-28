@@ -72,17 +72,47 @@
                 }
                 var TextsA = Array("Find The Answer Mobile Game" , "Design a PSD and then build it into HTML5" , "Mise en place d'un QUIZZ de 4 questions sur Wordpress" , "Mug designer" , "Landing Page responsive css coding") ; 
                 var TextsB = Array("Real-time bidding platform" , "Market research about Internet Hot Spots" , "Where Is My Car Mobile Application " , "UI Design for a mobile website." , "WordPress Website") ; 
-				
-                function setStyle(x)
+
+                         function setStyle(x)
                 {
                     
                      document.getElementsByClassName("OPTAA")[x].innerHTML = TextsB[x] ; 
+
                 }
                      function setStyleA(x)
                 {
                     
                      document.getElementsByClassName("OPTAA")[x].innerHTML = TextsA[x] ; 
                 }
+                
+                var IDGET = -1;
+                function getX()
+                {
+                    
+                    if(IDGET == 4)
+                        IDGET = -1 ; 
+                    IDGET++ ; 
+                    
+                    return IDGET ; 
+                    
+                    
+                    
+                }                
+                
+                var IDGET2 = -1;
+                function getX2()
+                {
+                    
+                    if(IDGET2 == 4)
+                        IDGET2 = -1 ; 
+                    IDGET2++ ; 
+                    
+                    return IDGET2 ; 
+                    
+                    
+                    
+                }
+                
 				function circleClick(ElementM , id )
 				{
 					
@@ -99,12 +129,9 @@
                                             
                                          for(x = 0 ; x < 5 ; x++)
                                              {
-
                                                  
-                                                $($(".OPTAA")[x]).fadeOut(500 ) ; 
-                                                 setTimeout(500, setStyle(x)) ; 
+                                              $($(".OPTAA")[x]).fadeOut(500 , function(){setStyleA(getX()) ; $($(".OPTAA")[getX2()]).fadeIn(500, function(){} ) ;  } ) ;  
                                                  
-                                                   $($(".OPTAA")[x]).fadeIn(500 ) ;  
                                                 
                                              }
                                              
@@ -122,9 +149,10 @@
                                                        for(x = 0 ; x < 5 ; x++)
                                              {
                                                  
-                                                $($(".OPTAA")[x]).fadeOut(500) ; 
-                                                     setTimeout(500, setStyleA(x)) ; 
-                                                   $($(".OPTAA")[x]).fadeIn(500  ) ;  
+                                                  document.x = x ; 
+                                                 
+                                          $($(".OPTAA")[x]).fadeOut(500 , function(){setStyle(getX()) ; $($(".OPTAA")[getX2()]).fadeIn(500, function(){} ) ;  } ) ;  
+                                                
                                                 
                                              }
                                              
@@ -148,12 +176,26 @@
                         {
                              if($("svg")[0].children[2] == ElementM)
                                         {
+                                                            for(x = 0 ; x < 5 ; x++)
+                                             {
+                                                 
+                                            
+                                            $($(".OPTAA")[x]).fadeOut(500 , function(){setStyleA(getX()) ; $($(".OPTAA")[getX2()]).fadeIn(500, function(){} ) ;  } ) ;  
+                                                
+                                             }
            
                         
                              
                                             
                                         }
                                     else{
+                                                        for(x = 0 ; x < 5 ; x++)
+                                             {
+                                                 
+                                            
+                                                        $($(".OPTAA")[x]).fadeOut(500 , function(){setStyle(getX()) ; $($(".OPTAA")[getX2()]).fadeIn(500, function(){} ) ;  } ) ;  
+                                                
+                                             }
                              
                                         
                                      
@@ -299,14 +341,14 @@ $(".chat_available").css({color: "#000", transition: "0.4s"});
 			</h2></br></br></br>
 
 		<center>
-		<div data-wow-delay="1s" data-wow-duration="1s" class="wow zoomInDown wl chlink"><img style="display:none" onclick="swetch('left' , this)" class="leftar arrowF linker" src="Images/LFC.png" />	
+		<div data-wow-delay="1s" data-wow-duration="1s" class="wow wl chlink"><img style="display:none" onclick="swetch('left' , this)" class="leftar arrowF linker" src="Images/LFC.png" />	
 		<img  onclick="swetch('right' , this)" class="rightar arrowF linker" src="Images/LRC.png" />	
 			</div>
 			
 			
 			
 			
-		<div  onclick="scroolfn(this)" style='cursor: pointer;' id="SW1F" click-href="parg01" data-wow-delay="0.2s" data-wow-duration="2s" class="wow zoomInDown wl chlink linker" class="khmershow" >
+		<div  onclick="scroolfn(this)" style='cursor: pointer;' id="SW1F" click-href="parg01" data-wow-delay="0.2s" data-wow-duration="2s" class="wow  wl chlink linker" class="khmershow" >
 			<img class="IMGSHOW " up="kh" src="Images/khmer24.png" />
 			<img style="display:none"  class="IMGSHOW" up="ks"  src="Images/khansacarpets.png" />
 			<img  style="display:none"  class="IMGSHOW" up="bn"  src="Images/bn.png" />
@@ -326,7 +368,7 @@ $(".chat_available").css({color: "#000", transition: "0.4s"});
 		<div>
 		<center class="parg01" >
 			
-			<p data-wow-delay="0.3s" class="wow fadeInUpBig wl " id="lth">
+			<p data-wow-delay="0.3s" class="wow wl " id="lth">
 			Khmer24 is an online market website, to buy and sell items online.</br>
 		I worked with a client from Camdodia to build a copy version of Khmer24, it took 3 months to end it. this version was designed by a designer and developed by me .
 		
@@ -334,7 +376,7 @@ $(".chat_available").css({color: "#000", transition: "0.4s"});
 </p>
 
 <a class="wow fadeInUpBig wl" id="vww" href="javascript:linkto('http://khmer24.com')">Visit Website</a><br/>
-<a class="wow fadeInUpBig wl" id="vww" onclick="scroolfnId(this)" click-href='SW1F'>Go up</a>
+<a class="wow fadeInUpBig wl" style="cursor:pointer;" id="vww" onclick="scroolfnId(this)" click-href='SW1F'>Go up</a>
 		</center>
 	</div>
 	
@@ -432,6 +474,8 @@ $(".chat_available").css({color: "#000", transition: "0.4s"});
 		document.getElementById("vww").href=linkm[at];
 		
 	}
+    				
+       
 
 </script>
 </div>

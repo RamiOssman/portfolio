@@ -291,6 +291,9 @@ float: left;
 	height: 80px ; 
 position: absolute ; 
 	padding-top: 120px ; 
+    padding: 50px; 
+    cursor: pointer
+
 	
 
 }
